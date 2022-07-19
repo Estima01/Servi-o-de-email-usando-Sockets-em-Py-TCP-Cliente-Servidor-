@@ -36,7 +36,7 @@ def enviar_email(): # Função para enviar e-mail
     mensagem = input("mensagem: ") # Mensagem do e-mail
     email.write("----------------\n De:{}\n Para: {}\n Assunto: {}\n Mensagem: {}\n".format(de, email_envia, assunto, mensagem))
     print("E-mail enviado")
-    email.close()
-    return email
+    email.close() # Fecha o arquivo
+    return email # Retorna o arquivo
 
 
